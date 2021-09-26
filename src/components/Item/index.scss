@@ -1,0 +1,17 @@
+.item-row {
+    display: flex;
+    border-bottom: solid 1px grey;
+    margin: 0 20px;
+    padding: 10px;
+
+    p {
+        flex: 1;
+    }
+}
+
+.item-unproc:hover {
+    background-color: #dfdfdf;
+}
+.item-selected {
+    background-color: #dfdfdf;
+}

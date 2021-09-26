@@ -1,0 +1,37 @@
+* {
+    box-sizing: content-box;
+}
+
+button {
+    cursor: pointer;
+}
+
+.app-ctn {
+    margin: 100px auto;
+    width: 80%;
+
+    .unprocessed-ctn, .processed-ctn {
+        border: solid 1px grey;
+        padding: 10px;
+        :last-child {
+            border-bottom: none;
+        }
+    }
+
+    .unprocessed-and-approval {
+        display: flex;
+
+        .unprocessed-ctn {
+            flex: 1;
+
+            .item-row{
+                cursor: pointer;
+            }
+        }
+        .approval-ctn {
+            border-right: solid 1px grey;
+            border-top: solid 1px grey;
+            flex: 0.5;
+        }
+    }
+}
